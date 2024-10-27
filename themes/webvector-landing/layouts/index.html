@@ -1,0 +1,19 @@
+{{- if lt hugo.Version "0.112.4" }}
+{{- errorf "=> hugo v0.112.4 or greater is required for Webvector to build " }}
+{{- end -}}
+
+<!DOCTYPE html>
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
+
+<head>
+    {{ partial "vector-head.html" . }}
+</head>
+
+<body>
+    <header class="bg-gray-900 sm:flex sm:justify-between sm:px-4 sm:py-3">
+        {{ partial "nav.html" . }}
+    </header>
+    <h1>This is the body section</h1>
+</body>
+
+</html>

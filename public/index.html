@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.136.5"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta name="robots" content="noindex, nofollow" />
+<title>
+  Webvector Landing Page
+</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+
+<body>
+    <header class="bg-gray-900 sm:flex sm:justify-between sm:px-4 sm:py-3">
+        
+<div class="flex items-center justify-between px-4 py-3 sm:p-0 sm:items-center"> 
+    
+    <div><img class="h-8" src="../../assets/img/unity.svg" alt="Logo SVG" /></div>
+    
+    <div class="sm:hidden">
+    <button @click="isOpen = !isOpen" type="button" class=" text-gray-500 hover:text-white focus:text-white focus:outline-none">
+    <svg
+      class="h-6 w-6 fill-current"
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      width="100"
+      height="100"
+      viewBox="0 0 50 50"
+        >
+      <path
+        d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+        ></path>
+        </svg>
+    </button>
+    </div>
+</div>
+
+<div :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+      
+      <a class="mt-1 block px-2 py-1 text-white font-semibold hover:bg-gray-500 rounded sm:mt-0 sm:ml-2" href=" /">Home</a></li>
+      
+      <a class="mt-1 block px-2 py-1 text-white font-semibold hover:bg-gray-500 rounded sm:mt-0 sm:ml-2" href=" /posts/">Posts</a></li>
+      
+      <a class="mt-1 block px-2 py-1 text-white font-semibold hover:bg-gray-500 rounded sm:mt-0 sm:ml-2" href=" /tags/">Tags</a></li>
+      
+</div>
+
+<script>
+    export default {
+    data() {
+        return {
+        isOpen:false,
+        }
+    }
+}
+</script>
+    </header>
+    <h1>This is the body section</h1>
+</body>
+
+</html>
